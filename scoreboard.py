@@ -43,11 +43,12 @@ class Scoreboard(Turtle):
         self.clear()
         self.update_scoreboard()
 
-    # def game_over_massage(self):
-    #     """ Show game over massage."""
-    #     self.clear()
-    #     self.goto(0, 0)
-    #     self.write(f"Game Over", align=ALIGNMENT, font=('Courier', 50, 'normal'))
-    #     self.goto(0, -30)
-    #     self.write(f"Your score: {self.score}", align=ALIGNMENT, font=FONT)
+    def game_over_massage(self):
+        """ Show game over massage."""
+        self.clear()
+        self.goto(0, 0)
+        # self.write(f"Game Over", align=ALIGNMENT, font=('Courier', 50, 'normal'))
+        # self.goto(0, -30)
+        # self.write(f"Your score: {self.score}", align=ALIGNMENT, font=FONT)
 
+        self.write(f"      Game Over\n High Score: {self.high_score}", align=ALIGNMENT, font=FONT)
